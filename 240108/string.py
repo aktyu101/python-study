@@ -75,3 +75,13 @@ print(e)
 ㄴ"Error is %d%%." % 98
 'Error is 98%.'
 '''
+
+# 정렬과 공백
+f = "%10s" % "hi"
+print(f)
+g = "%-10sjane." % 'hi'
+print(g)
+
+# 소수점 표현
+h = "%0.4f" % 3.42134234
+print(h)
