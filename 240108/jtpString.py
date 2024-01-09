@@ -1,3 +1,4 @@
+## 문자열 자료형 ##
 # 이스케이프 코드 /n
 multiline = "Life is too short\nYou need python"
 print(multiline)
@@ -76,6 +77,7 @@ print(e)
 'Error is 98%.'
 '''
 
+# 포맷 코드와 숫자 함께 사용하기
 # 정렬과 공백
 f = "%10s" % "hi"
 print(f)
@@ -85,3 +87,50 @@ print(g)
 # 소수점 표현
 h = "%0.4f" % 3.42134234
 print(h)
+
+# 포맷 함수를 사용한 포매팅
+# 숫자 바로 대입하기
+i = "I eat {0} apples".format(3)
+print(i)
+# 문자열 바로 대입하기
+i2 = "I eat {0} apples".format("five")
+print(i2)
+# 숫자 값을 가진 변수로 대입하기
+i3 = "I eat {0} apples".format(number)
+print(i3)
+# 2개 이상의 값 넣기
+number2 = 5
+day = "three"
+i4 = "I ate {0} apples. so I was sick for {1} days.".format(number2, day)
+print(i4)
+# 이름으로 넣기 
+i5 = "I ate {number} apples. so I was sick for {day} days.".format(number=10, day=3)
+print(i5)
+# 인덱스와 이름 혼용해서 넣기
+i6 = "I ate {0} apples. so I was sick for {day} days.".format(10, day=3)
+print(i6)
+# 왼쪽 정렬
+i7 = "{0:<10}".format('hi')
+print(i7+"*")
+# 오른쪽 정렬
+i8 = "{0:>10}".format('hi')
+print(i8)
+# 가운데 정렬
+i9 = "{0:^10}".format('hi')
+print(i9)
+# 공백 채우기
+i10 = "{0:=^10}".format('hi')
+print(i10)
+# 소수점 표현하기
+y = 3.42134234
+print("{0:=^10.4f}".format(y))
+# { 또는 } 문자 표현하기
+i11 = "{{and}}".format()
+print(i11)
+# f 문자열 포매팅 : 3.6버전부터 사용 가능
+name = "홍길동"
+age = 20
+print(f'나의 이름은 {name}입니다. 나이는 {age}입니다.')
+# 딕셔너리 f 문자열 포매팅
+i12 = {"name":'홍길동', "age":30}
+print(f'나의 이름은 {i12["name"]}입니다. 나이는 {i12["age"]}입니다.')
