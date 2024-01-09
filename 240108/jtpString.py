@@ -131,6 +131,30 @@ print(i11)
 name = "홍길동"
 age = 20
 print(f'나의 이름은 {name}입니다. 나이는 {age}입니다.')
-# 딕셔너리 f 문자열 포매팅
+# 딕셔너리(key, value를 한쌍으로 가지는 자료형) f 문자열 포매팅
 i12 = {"name":'홍길동', "age":30}
-print(f'나의 이름은 {i12["name"]}입니다. 나이는 {i12["age"]}입니다.')
+print(f'나의 이름은 {i12["name"]:=<10}입니다. 나이는 {i12["age"]}입니다.')
+
+# 문자열 관련 함수들
+
+# 문자 개수 세기 count
+hobby = "hobby"
+print(hobby.count('b'))
+# 위치 알려 주기 1 - find
+str = "Python is the best choice"
+print(str.find('i')) #처음으로 검색된 문자열의 인덱스를 봔환, 찾는 문자나 문자열이 존재하지 않는다면 -1 반환
+# 위치 알려 주기 2 - index
+print(str.index('t')) #처음으로 검색된 문자열의 인덱스를 봔환, 찾는 문자나 문자열이 존재하지 않는다면 오류 발생
+# 문자열 삽입 join (리스트, 튜플에서도 사용 가능)
+strA = "abcd"
+print(",".join(strA))
+# 리스트에서 join 사용
+listA = ",".join(['a','b','c','d'])
+print(listA)
+
+#소문자를 대문자로 바꾸기 - upper
+#대문자를 소문자로 바꾸기 - lower
+text1 = 'hi'
+text2 = "HI"
+print(text1.upper())
+print(text2.lower())
