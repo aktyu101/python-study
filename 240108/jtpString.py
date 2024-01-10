@@ -152,9 +152,25 @@ print(",".join(strA))
 listA = ",".join(['a','b','c','d'])
 print(listA)
 
-#소문자를 대문자로 바꾸기 - upper
-#대문자를 소문자로 바꾸기 - lower
+# 소문자를 대문자로 바꾸기 - upper
+# 대문자를 소문자로 바꾸기 - lower
 text1 = 'hi'
 text2 = "HI"
 print(text1.upper())
 print(text2.lower())
+
+# 공백 지우기
+texta = "  text  "
+print(texta.lstrip())
+print(texta.rstrip())
+print(texta.strip())
+
+# 문자열 바꾸기 replace
+textb = "life is too short"
+print(textb.replace("life","your leg"))
+
+# 문자열 나누기 split
+print(textb.split())
+print(textb.split("o"))
+# 괄호안에 아무것도 입력하지 않으면 space, enter, tab을 기준으로 나눠줌
+# 특정 값이 있을 경우에는 괄호 안의 값을 구분자로 해서 문자열을 나누어 줌
