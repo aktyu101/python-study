@@ -62,3 +62,43 @@ print(a9)
 b2.sort()
 print(b2)
 
+# 리스트 뒤집기 reverse
+a10 = [1, 2, 3]
+a10.reverse() # 값을 바꿈
+print(a10)
+
+# 인덱스 반환 index
+print(a10.index(2))
+
+# 리스트에 요소 삽입 insert
+# insert(a, b)는 리스트의 a번째 위치에 b를 삽입하는 함수
+a10.insert(0,5)
+print(a10)
+a10.reverse()
+print(a10)
+# 리스트에 요소 삽입 insert
+
+# 리스트 요소 제거 remove
+# 리스트에서 첫번째로 나오는 x를 제거
+a10.remove(2)
+print(a10)
+
+# 리스트 요소 끄집어 내기 pop
+# 리스트의 맨 마지막 요소를 리턴하고 그 요소는 삭제함
+a10.pop()
+print(a10)
+
+# 리스트에 포함된 요소 x의 개수 세기 count
+# 리스트안에 x가 몇개 있는지 조사하여 그 개수를 리턴
+print(a10.count(1))
+
+# 리스트 확장 extend
+a11 = [1, 2, 3]
+a11.extend([4, 5]) # a += [4, 5]
+print(a11)
+b = [6, 7, 1]
+a11.extend(b)
+print(a11)
+
+
+
